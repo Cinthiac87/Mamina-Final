@@ -1,0 +1,110 @@
+@use "variables" as v;
+%texto-destacado {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: v.$color-fondo;
+  font-family: v.$fuente-principal;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: v.$color-verde;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 10px;
+  font-size: 14px;
+  text-align: justify;
+  font-family: v.$fuente-secundaria;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: v.$fuente-secundaria;
+}
+
+li {
+  font-size: 14px;
+  font-family: v.$fuente-secundaria;
+}
+
+section {
+  background: v.$color-blanco;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include v.tarjeta(v.$radio, v.$sombra, 20px);
+}
+
+.subtitulo {
+  color: v.$color-subtitulo;
+}
+
+.colorAzul {
+  @extend %texto-destacado;
+  color: v.$color-azul;
+  font-size: 20px;
+}
+
+.felipa-regular {
+  font-family: v.$fuente-principal;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+header {
+  color: v.$color-principal;
+  background-color: v.$color-blanco;
+  box-shadow: v.$sombra;
+  border-radius: v.$radio;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+}

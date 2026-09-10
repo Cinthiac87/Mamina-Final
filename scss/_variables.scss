@@ -1,0 +1,19 @@
+$color-fondo: rgb(253, 241, 184);
+$color-principal: rgb(172, 92, 2);
+$color-verde: rgb(2, 117, 36);
+$color-subtitulo: rgb(138, 69, 19);
+$color-azul: rgb(58, 58, 253);
+$color-blanco: white;
+$color-borde: rgb(212, 212, 212);
+
+$radio: 15px;
+$sombra: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+$fuente-principal: "Felipa", serif;
+$fuente-secundaria: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+@mixin tarjeta($radio, $sombra, $padding) {
+  border-radius: $radio;
+  box-shadow: $sombra;
+  padding: $padding;
+}

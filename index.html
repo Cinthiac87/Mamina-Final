@@ -1,100 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAMINA</title>
+
+    <title>Mamina Deleites | Cereales y productos saludables</title>
+
+    <meta name="description"
+        content="Mamina Deleites ofrece cereales, granolas, frutos secos y productos saludables de calidad para toda la familia.">
+
+    <meta name="keywords"
+        content="Mamina Deleites, cereales, granola, frutos secos, productos saludables, alimentación saludable">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
+    <!-- NAVBAR DE BOOTSTRAP: obligatoria en TODOS los archivos -->
+    <nav class="navbar navbar-expand-lg mamina-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/LogoMamina.png" alt="Logo" width="45" height="45" class="me-2">
+                <span class="felipa-regular">Mamina Deleites</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMamina"
+                aria-controls="navMamina" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMamina">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/sobrenosotros.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contactos.html">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/novedades.html">Novedades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header>
-        <img src="images/LogoMamina.png" alt="Logo">
         <div class="titulos">
-            <h1 class="felipa-regular">Mamina Deleites</h1>
+            <h1 class="felipa-regular">Somos Mamina</h1>
             <h2 class="subtitulo">Nutriendo el futuro con granos de calidad</h2>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="pages/contactos.html">Contactos</a></li>
-                <li><a href="pages/novedades.html">Novedades</a></li>
-            </ul>
-        </nav>
-
     </header>
+
     <main class="inicio">
-            <section class="beneficios">
-                <h2>¿Por qué elegir nuestros cereales?</h2>
-                <ul>
-                    <li>✔️ Ingredientes de calidad.</li>
-                    <li>✔️ Fuente de fibra.</li>
-                    <li>✔️ Sin conservantes artificiales.</li>
-                    <li>✔️ Opciones para toda la familia.</li>
-                </ul>
-            </section>
+        <section class="beneficios" data-aos="fade-up">
+            <h2>¿Por qué elegir nuestros cereales?</h2>
+            <ul>
+                <li>✔️ Ingredientes de calidad.</li>
+                <li>✔️ Fuente de fibra.</li>
+                <li>✔️ Sin conservantes artificiales.</li>
+                <li>✔️ Opciones para toda la familia.</li>
+            </ul>
+        </section>
 
-            <section class="destacado">
-                <h2> 🌟Productos destacados de la semana</h2>
-                <div class="producto-destacado">
-                    <img src="images/mixtropi.jpg" alt="Mix Tropical">
-                    <h3 class="colorAzul">Mix tropical</h3>
-                    <p>$10500 el Kilo</p>
+        <!-- COMPONENTE DE BOOTSTRAP: card para el producto destacado -->
+        <section class="destacado" data-aos="fade-up">
+            <h2>🌟 Productos destacados de la semana</h2>
+            <div class="card producto-card mx-auto">
+                <img src="assets/mixtropi.png" class="card-img-top" alt="Mix Tropical">
+                <div class="card-body text-center">
+                    <h3 class="card-title colorAzul">Mix tropical</h3>
+                    <p class="card-text">$10500 el Kilo</p>
+                    <a href="pages/productos.html" class="btn btn-mamina">Ver más</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="pagos">
-                <h2>Medios de pago</h2>
-                <ul>
-                    <li>💵 Efectivo</li>
-                    <li>🏦 Transferencia bancaria</li>
-                    <li>📱 Billetera virtual</li>
-                </ul>
+        <section class="pagos" data-aos="fade-up">
+            <h2>Medios de pago</h2>
+            <ul>
+                <li>💵 Efectivo</li>
+                <li>🏦 Transferencia bancaria</li>
+                <li>📱 Billetera virtual</li>
+            </ul>
 
-            </section>
+        </section>
 
-            <section class="promociones">
-                <h2>Promociones</h2>
-                <ul>
-                    <li>Packs familiares.</li>
-                    <li>Combos desayuno.</li>
-                    <li>Descuentos por cantidad.</li>
-                </ul>
-            </section>
+        <section class="promociones" data-aos="fade-up">
+            <h2>Promociones</h2>
+            <ul>
+                <li>Packs familiares.</li>
+                <li>Combos desayuno.</li>
+                <li>Descuentos por cantidad.</li>
+            </ul>
+        </section>
 
     </main>
     <footer>
-        <div class="contacto">
-            <h3>Envíanos un mensaje</h3>
-            <p>
-                <img src="images/whatsapp10.png" alt="WhatsApp">
-                2617230348
-            </p>
+
+        <div class="footer-contacto">
+
+            <div class="contacto">
+                <h3>Envíanos un mensaje</h3>
+                <ul>
+                    <li>
+                        <img src="assets/whatsapp10.png" alt="Logo de WhatsApp">
+                        2617230348
+                    </li>
+                </ul>
+            </div>
+
+            <div class="instagram">
+                <h3>Buscanos en Instagram!</h3>
+                <ul>
+                    <li>
+                        <img src="assets/instagram5.png" alt="Logo de Instagram">
+                        <a href="http://www.instagram.com/maminadeleites" target="_blank">Mamina</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-        <div class="instagram">
-            <h3>Buscanos en instagram!</h3>
-            <p>
-                <img src="images/instagram5.png" alt="Instagram">
-                <a href="http://www.instagram.com/maminadeleites" target="_blank">Mamina</a>
-            </p>
-         </div>
-        
+
         <div class="footer-copy">
             <p>Copyright 2026 Cinthia Cialona</p>
             <p>Rivadavia - Mendoza</p>
             <p>Telefono 264587655</p>
         </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

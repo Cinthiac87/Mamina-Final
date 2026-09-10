@@ -1,0 +1,54 @@
+@use "variables" as v;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: v.$radio;
+  font-family: v.$fuente-secundaria;
+
+  .footer-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .contacto,
+    .instagram {
+      text-align: center;
+    }
+  }
+
+  div {
+    p {
+      font-size: 12px;
+      text-align: end;
+    }
+
+    h3 {
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 10px 0;
+    }
+  }
+
+  .footer-copy {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    .footer-contacto {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+.mamina-navbar {
+  background-color: v.$color-blanco;
+  border-radius: v.$radio;
+  box-shadow: v.$sombra;
+  padding: 10px 20px;
+
+  .navbar-brand {
+    color: v.$color-principal;
+    font-weight: bold;
+
+    &:hover {
+      color: v.$color-verde;
+    }
+
+    .felipa-regular {
+      font-family: v.$fuente-principal;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: v.$color-principal;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        color: v.$color-verde;
+      }
+
+      &.active {
+        color: v.$color-verde;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border-color: v.$color-principal;
+
+    &:focus {
+      box-shadow: 0 0 0 0.15rem rgba(172, 92, 2, 0.25);
+    }
+  }
+}

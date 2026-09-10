@@ -1,0 +1,332 @@
+@charset "UTF-8";
+.colorAzul {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(253, 241, 184);
+  font-family: "Felipa", serif;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: rgb(2, 117, 36);
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 10px;
+  font-size: 14px;
+  text-align: justify;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li {
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  background: white;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.subtitulo {
+  color: rgb(138, 69, 19);
+}
+
+.colorAzul {
+  color: rgb(58, 58, 253);
+  font-size: 20px;
+}
+
+.felipa-regular {
+  font-family: "Felipa", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+  color: rgb(172, 92, 2);
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+header .titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+}
+.mamina-navbar {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+}
+.mamina-navbar .navbar-brand {
+  color: rgb(172, 92, 2);
+  font-weight: bold;
+}
+.mamina-navbar .navbar-brand:hover {
+  color: rgb(2, 117, 36);
+}
+.mamina-navbar .navbar-brand .felipa-regular {
+  font-family: "Felipa", serif;
+}
+.mamina-navbar .navbar-nav .nav-link {
+  color: rgb(172, 92, 2);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.mamina-navbar .navbar-nav .nav-link:hover {
+  color: rgb(2, 117, 36);
+}
+.mamina-navbar .navbar-nav .nav-link.active {
+  color: rgb(2, 117, 36);
+}
+.mamina-navbar .navbar-toggler {
+  border-color: rgb(172, 92, 2);
+}
+.mamina-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(172, 92, 2, 0.25);
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.inicio {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "beneficios" "destacado" "pagos" "promociones";
+  align-items: start;
+}
+
+.beneficios {
+  grid-area: beneficios;
+}
+
+.destacado {
+  grid-area: destacado;
+}
+.destacado .producto-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.destacado .producto-card .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.destacado .producto-card .card-title {
+  color: rgb(58, 58, 253);
+}
+
+.pagos {
+  grid-area: pagos;
+}
+
+.promociones {
+  grid-area: promociones;
+}
+
+.producto-destacado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.producto-destacado img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+}
+.producto-destacado h4 {
+  color: rgb(172, 92, 2);
+  font-size: 22px;
+}
+
+.imagen {
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+.imagen:hover {
+  transform: translateY(-5px);
+}
+.imagen h3 {
+  margin-bottom: 15px;
+}
+.imagen img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+section ul li {
+  padding: 2px;
+  margin: 15px;
+}
+
+.nosotros-grid {
+  display: grid;
+  gap: 20px;
+}
+.nosotros-grid section {
+  border-top: 5px solid rgb(2, 117, 36);
+}
+.nosotros-grid ul {
+  list-style: none;
+  padding: 0;
+}
+.nosotros-grid li {
+  margin: 12px 0;
+}
+.nosotros-grid li::before {
+  content: "🌾 ";
+}
+.nosotros-grid p {
+  line-height: 1.7;
+}
+
+.quienes-somos {
+  grid-area: quienes;
+}
+
+.mision {
+  grid-area: mision;
+}
+
+.vision {
+  grid-area: vision;
+}
+
+.valores {
+  grid-area: valores;
+}
+
+.elegirnos {
+  grid-area: elegir;
+}
+
+@media screen and (min-width: 1024px) {
+  .inicio {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "beneficios destacado" "pagos promociones";
+    align-items: start;
+  }
+  .grilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .producto-destacado {
+    flex-direction: row;
+  }
+  .destacado .producto-card {
+    max-width: 400px;
+  }
+  .nosotros-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "quienes quienes" "mision vision" "valores elegir";
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer .footer-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-contacto .contacto,
+footer .footer-contacto .instagram {
+  text-align: center;
+}
+footer div p {
+  font-size: 12px;
+  text-align: end;
+}
+footer div h3 {
+  padding: 10px;
+  margin: 10px 0;
+}
+footer div ul {
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-copy {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer-contacto {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
