@@ -168,11 +168,25 @@ header h2 {
 }
 .destacado .producto-card .card-img-top {
   width: 100%;
-  height: auto;
+  height: 370px;
   object-fit: cover;
 }
 .destacado .producto-card .card-title {
   color: rgb(58, 58, 253);
+}
+
+.catalogo .producto-card {
+  height: 100%;
+}
+.catalogo .producto-card .card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.catalogo .producto-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pagos {
